@@ -2,3 +2,8 @@
 # A function that creates a personality test and returns a type (might switch to previous shows or movies that they enjoyed)
 # A function that applies this personality and decides genre preference 
 # A function that is able to pick movies from that genre to recommend 
+
+
+#Im starting with the last part first, trying to make a code that will select a genre from a group of questions
+#it wil ask for the persons favorite movie and link it with a genre, then select a movie to recommend
+#Then i will work from that and build
