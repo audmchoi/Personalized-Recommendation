@@ -5,5 +5,5 @@
 
 
 #Im starting with the last part first, trying to make a code that will select a genre from a group of questions
-#it wil ask for the persons favorite movie and link it with a genre, then select a movie to recommend
-#Then i will work from that and build
+#it wil ask for the persons favorite movie and link it with a genre, then select a movie to recommend. The fuction def recommend_movies will select movies in the same genre as the favorite movie.
+#I want this to all happen in a tkinter 
