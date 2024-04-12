@@ -1,5 +1,7 @@
 import tkinter as tk 
 from tkinter import messagebox
+import random
+
 
 #This is going to be where I put the personality test questions, but for now Im just going to keep it as 1 question
 movie_recommendations = {
@@ -20,8 +22,14 @@ def recommend_movies(favorite_movie):
 return ["No recommendations found. Try another movie] #This is also a place holder, Im having the personality test as mutiple choice
         #So something similar will be displayed when something other than an option is input
 #This is going to be in charg of the Reccomend button
+def recomment_movie(fav_genre):
+  if fav_genre in movie_recommendations:
+    return random.choice(movie_recommendations[fav_genre]
+  
 def on_recommend():
   favorite_movie = movie_entry.get()
+  favorite_actor = entry_actor.get()
+  fav_genre = genre_var.get()
   recommendations = recommend_movies(favorite_movie)
   messagebox.showinfo("Recommendations", "/n".join(recommendations))
 
@@ -29,10 +37,21 @@ def on_recommend():
 root = tk.Tk()
 root.title("Movie Recomender")
 #entry to input answers to questions
-tk.Label(root, text="Enter your favorite movie:").pack()
+tk.Label(root, text="What is your favorite movie:").pack()
 movie_entry = tk.Entry(root)
 movie_entry.pack()
 #I think i want to change this to grid later
+
+tk.Label(root, text= "Who is your favorite actor")
+entry_actor = tk.Entry(root)
+antry_actor.pack()
+
+tk.Label(root, text= "what if your favorite type of movie?")
+genre_var = tk.StringVar()
+genre_var.set("Select a genre")
+genres = [ #Instert genres here]
+genre_menu = tk.OptionMenu(root, genre_var, *genres)
+genre_menu.pack()
 
 #Button 
 recommend_btn = tk.Button(root, text="Recommend!", command=on_recommend)
