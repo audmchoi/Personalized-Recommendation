@@ -3,6 +3,15 @@ from tkinter import messagebox
 import random
 
 
+def load_movies(genre):
+  try:
+    with open (f"{genre}.txt, "r") as file: 
+               moives = file.readlines()
+    movies = [movie.strop() for movie in movies]
+    return movies 
+  except FileNotFoundError:
+    return []
+
 #This is going to be where I put the personality test questions, but for now Im just going to keep it as 1 question
 movie_recommendations = {
   "action": ["Die Hard", "Avengers", "John Wick"]
@@ -15,11 +24,11 @@ movie_recommendations = {
 def recommend_movies(favorite_movie):
   #This is a placeholder for now. The real recomendation logic I'll add based on how i decide to do the personality test
   #for now it will just pick one from the same genre, for now just the list, later the file
-  for gnere, movies in movie_recommendations.items():
-    if favorite_movie in movies:
-      recommended = [movie for movie in movies if movie != favorite_movie]
-      return recommended 
-return ["No recommendations found. Try another movie] #This is also a place holder, Im having the personality test as mutiple choice
+  movies = load_movies(fav_genre):
+    if movies:
+      return random.choice(movies)
+    else:
+      return ["No recommendations found. Try another movie] #This is also a place holder, Im having the personality test as mutiple choice
         #So something similar will be displayed when something other than an option is input
 #This is going to be in charg of the Reccomend button
 def recomment_movie(fav_genre):
