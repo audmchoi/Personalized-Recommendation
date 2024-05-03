@@ -1,6 +1,5 @@
-# In this program I want to try and take information about someone's personality and based on that information, give them movie or tv show reccomendations. I think it would be easier to focus on just movies or just tv shows and to focus from one platform. I want to be able to apply some sort of personality assesment and use that information to predict what would be enjoyed.
-# A function that creates a personality test and returns a type (might switch to previous shows or movies that they enjoyed)
-# A function that applies this personality and decides genre preference... **Im thinking of changing this from personality quiz to just questions abt what they're in the mood for watching
+# In this program I want to try and take information about peoples previous favorite movies and based on that information, give them movie or tv show reccomendations. I think it would be easier to focus on just movies or just tv shows and to focus from one platform. I want to be able to apply some sort of assesment and use that information to predict what would be enjoyed.
+# A function that creates a test and returns a type/genre they like 
 # A function that is able to pick movies from that genre to recommend 
 
 Document
