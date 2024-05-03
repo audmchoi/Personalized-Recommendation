@@ -1,1 +1,110 @@
-list
+Die Hard
+Mad Max
+John Wick
+The Dark Knight
+Terminator 2
+Gladiator
+The Matrix
+Aliens
+Lethal Weapon
+Raiders of the Lost Ark
+Inception
+Kill Bill
+The Bourne Identity
+Mission Impossible 
+Fury
+Predator
+Heat
+RoboCop
+The Rock
+True Lies
+Speed
+Casino Royale
+300
+Braveheart
+Edge of Tomorrow
+Black Panther
+Iron Man
+Logan
+The Avengers
+Skyfall
+Rambo
+Total Recall
+Mad Max 2
+Pacific Rim
+Dredd
+Equilibrium
+Wanted
+Blade Runner 2049
+Sicario
+Kingsman: The Secret Service
+Baby Driver
+The Equalizer
+Escape from New York
+Deadpool
+The Magnificent Seven
+The Expendables
+Taken
+Jack Reacher
+El Mariachi
+Crank
+Point Break
+The Italian Job
+Bad Boys
+Under Siege
+The Last Samurai
+Shooter
+Con Air
+Face/Off
+The Transporter
+Mr. & Mrs. Smith
+Salt
+Rumble in the Bronx
+The Fast and the Furious
+Triple Frontier
+Blood Diamond
+Collateral
+Unstoppable
+The A-Team
+District 9
+Top Gun
+Arnold Schwarzenegger
+Sylvester Stallone
+Bruce Willis
+Jason Statham
+Tom Cruise
+Dwayne Johnson (The Rock)
+Vin Diesel
+Keanu Reeves
+Jean-Claude Van Damme
+Chuck Norris
+Harrison Ford
+Mel Gibson
+Jet Li
+Jackie Chan
+Steven Seagal
+Liam Neeson
+Will Smith
+Matt Damon
+Wesley Snipes
+Daniel Craig
+Chris Hemsworth
+Mark Wahlberg
+Chris Evans
+Robert Downey Jr.
+Michael B. Jordan
+Brad Pitt
+Tom Hardy
+Gerard Butler
+Denzel Washington
+Kurt Russell
+Samuel L. Jackson
+Hugh Jackman
+Antonio Banderas
+Idris Elba
+Charlize Theron
+Angelina Jolie
+Scarlett Johansson
+Zoe Saldana
+Michelle Rodriguez
+Milla Jovovich
