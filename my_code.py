@@ -12,17 +12,17 @@ def load_movies(genre):
   except FileNotFoundError:
     return []
 def load_movie_rec(genre_rec):
-  try:
-    with open (f"{genre_rec}_rec.txt, "r") as file:
-               movies = [line.strip() for line in file.readlines()]
-    return movies
-  except FileNotFoundError:
-    return[]
+    try:
+        with open(f"{genre}_rec.txt", "r") as file:
+            movies = [line.strip() for line in file.readlines()]
+        return movies
+    except FileNotFoundError:
+        return []
 
 
 #Function to recommend movies based on the answer, for now just off of "what is ur fav movie"
-def recommend_movies(favorite_movie):
-  movies = load_movies(genre_rec):
+def recommend_movie(genre_rec):
+  movies = load_movies(genre_rec)
     if movies:
       return random.choice(movies)
     else:
@@ -58,6 +58,7 @@ messagebox.showinfo("Recommendations", recommendation)
 #Tkinter 
 root = tk.Tk()
 root.title("Movie Recomender")
+root.geometry("700x500"
 #entry to input answers to questions
 tk.Label(root, text="What is your favorite movie:").pack()
 movie_entry = tk.Entry(root)
@@ -77,6 +78,6 @@ genre_menu.pack()
 
 #Button 
 recommend_btn = tk.Button(root, text="Recommend!", command=on_recommend)
-recommend_btn.pack() #Pack just for now
+recommend_btn.pack() 
 
 root.mainloop()
