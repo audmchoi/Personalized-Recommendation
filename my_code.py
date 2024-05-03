@@ -11,20 +11,13 @@ def load_movies(genre):
     return movies 
   except FileNotFoundError:
     return []
-def load_movie_rec(genre_red):
+def load_movie_rec(genre_rec):
   try:
     with open (f"{genre_rec}_rec.txt, "r") as file:
                movies = [line.strip() for line in file.readlines()]
     return movies
   except FileNotFoundError:
     return[]
-def load_actors(genre_actor):
-  try:
-    with open(f"{genre_actor}_actor.txt, "r") as file:
-              actors = [line.strip() for line in file.readlines()]
-    return actors
-  except FileNotFoundError:
-    return []
 
 
 #Function to recommend movies based on the answer, for now just off of "what is ur fav movie"
@@ -46,7 +39,7 @@ def on_recommend():
   genres =['action', 'comedy', 'romance', 'horror']
 
 for genre in genres:
-  actors = load_movies(genre_actor)
+  actors = load_movies(genre)
   if favorite_actor in actors:
     genre_from_actor = genre
     actor_found = True 
