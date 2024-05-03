@@ -3,9 +3,34 @@ from tkinter import messagebox
 import random
 
 
-def load_movies(genre):
+def load_movies(action):
   try:
-    with open (f"{genre}.txt, "r") as file: 
+    with open (f"{action}.txt, "r") as file: 
+               moives = file.readlines()
+    movies = [movie.strop() for movie in movies]
+    return movies 
+  except FileNotFoundError:
+    return []
+
+def load_movies(romance):
+  try:
+    with open (f"{romance}.txt, "r") as file: 
+               moives = file.readlines()
+    movies = [movie.strop() for movie in movies]
+    return movies 
+  except FileNotFoundError:
+    return []
+def load_movies(horror):
+  try:
+    with open (f"{horror}.txt, "r") as file: 
+               moives = file.readlines()
+    movies = [movie.strop() for movie in movies]
+    return movies 
+  except FileNotFoundError:
+    return []
+def load_movies(comedy):
+  try:
+    with open (f"{comedy}.txt, "r") as file: 
                moives = file.readlines()
     movies = [movie.strop() for movie in movies]
     return movies 
@@ -28,7 +53,7 @@ def recommend_movies(favorite_movie):
     if movies:
       return random.choice(movies)
     else:
-      return ["No recommendations found. Try another movie] #This is also a place holder, Im having the personality test as mutiple choice
+      return ["Try another movie] #This is also a place holder, Im having the personality test as mutiple choice
         #So something similar will be displayed when something other than an option is input
 #This is going to be in charg of the Reccomend button
 def recomment_movie(fav_genre):
@@ -51,7 +76,7 @@ movie_entry = tk.Entry(root)
 movie_entry.pack()
 #I think i want to change this to grid later
 
-tk.Label(root, text= "Who is your favorite actor")
+tk.Label(root, text= "What genre of movies do you typically like?")
 entry_actor = tk.Entry(root)
 antry_actor.pack()
 
