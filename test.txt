@@ -1,4 +1,3 @@
-You need to have tkinter installed 
-For now to test, you would open up terminal and run the python code. It will open a tkinter with further instructions
-You follow along and the end result will be a movie recommendation.
-Later there will be files of each genre that need to be downloaded in order for the code to access it
+Download all the txt files and the code file 
+make sure tkinter is installed
+run the my_code.py
