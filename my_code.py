@@ -5,7 +5,7 @@ import random
 
 def load_movies(genre):
   try:
-    with open (f"{genre}.txt, "r") as file: 
+    with open(f"{genre}.txt", "r") as file: 
                moives = file.readlines()
     movies = [movie.strop() for movie in movies]
     return movies 
