@@ -1,16 +1,15 @@
-import tkinter as tk 
+import tkinter as tk
 from tkinter import messagebox
 import random
 
-
 def load_movies(genre):
-  try:
-    with open(f"{genre}.txt", "r") as file: 
-               moives = file.readlines()
-    movies = [movie.strop() for movie in movies]
-    return movies 
-  except FileNotFoundError:
-    return []
+    try:
+        with open(f"{genre}.txt", "r") as file:
+            movies = [line.strip() for line in file.readlines()]
+        return movies
+    except FileNotFoundError:
+        return []
+
 def load_movie_rec(genre_rec):
     try:
         with open(f"{genre}_rec.txt", "r") as file:
@@ -20,15 +19,13 @@ def load_movie_rec(genre_rec):
         return []
 
 
-#Function to recommend movies based on the answer, for now just off of "what is ur fav movie"
 def recommend_movie(genre_rec):
     movies = load_movies(genre_rec)
     if movies:
         return random.choice(movies)
     else:
-      return ["Try another movie or try typing it more simple. Ex. The Avengers (instead of specific avengers move)"]
-
-  
+      return ["Try another movie or try typing it more simple. Ex. The Avengers (instead of specific avengers move)"] #This is also a place holder, Im having the personality test as mutiple choice
+        #So something similar will be displayed when something other than an option is input
 def on_recommend():
     favorite_actor = actor_entry.get()
     favorite_movie = movie_entry.get()
@@ -57,9 +54,7 @@ def on_recommend():
 
     messagebox.showinfo("Recommendations", recommendation)
 
-
-messagebox.showinfo("Recommendations", recommendation)
-
+# Tkinter setup
 root = tk.Tk()
 root.title("Movie Recommender")
 root.geometry("900x500")
@@ -91,3 +86,4 @@ font= nice_font)
 recommend_btn.pack()
 
 root.mainloop()
+
